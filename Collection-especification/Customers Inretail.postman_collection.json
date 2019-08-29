@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "fefbb47f-694b-480f-8125-68c9f52371d9",
+		"name": "Customers Inretail",
+		"description": "MicroServicios para la gestión de los clientes.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getCustomers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9001/spring-customers-data/customers/",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"spring-customers-data",
+						"customers",
+						""
+					]
+				},
+				"description": "URI para obtener customers"
+			},
+			"response": []
+		},
+		{
+			"name": "saveCustomers",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombres\": \"Monica\",\r\n    \"apellidos\": \"Baldeon Baldeon\",\r\n    \"fechaNacimiento\": \"29/07/1990\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:9001/spring-customers-data/customers/",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"spring-customers-data",
+						"customers",
+						""
+					]
+				},
+				"description": "URI para grabar customers"
+			},
+			"response": []
+		},
+		{
+			"name": "getStatistics",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9001/spring-customers-data/customers/statistics",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"spring-customers-data",
+						"customers",
+						"statistics"
+					]
+				},
+				"description": "URI para obtener statistics"
+			},
+			"response": []
+		}
+	]
+}
